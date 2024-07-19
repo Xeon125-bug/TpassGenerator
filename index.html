@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TpassGenerator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Untitled.png">
+</head>
+<body>
+    <p style="text-align: center;">TpassGenerator</p>
+    <h2>A true password Generator</h2>
+    <h3 >DON'T USE THESE PASSWORDS!</h3>
+    <h4>1234567,password,1234,1234567890,qwerty</h4>
+    <div class="container">
+        <form id="password-form">
+            <label style="font-size: 18px;">
+                Password length:
+                <input type="number" id="password-length" value="20" min="1">
+            </label>
+            <label style="font-size: 18px;">
+                <input type="checkbox" id="include-lowercase" checked>
+                LowerCase (abc)
+            </label>
+            <label style="font-size: 18px;">
+                <input type="checkbox" id="include-uppercase" checked>
+                UpperCase (ABCD)
+            </label>
+
+            <label style="font-size: 18px;">
+                <input type="checkbox" id="include-numbers" checked>
+                Numbers (123)
+            </label style="font-size: 20px;">
+            <label>
+                <input type="checkbox" id="include-symbols" checked>
+                Symbols (!@$%)
+            </label>
+        </form>
+
+        <button type="button" onclick="generateAndDisplayPassword()" style="font-size: medium;">Generate Password</button>
+        <button type="button" onclick="copypassword()" style="font-size:smaller">CopyPassword</button>
+        <div class="password-output" id="password-output"></div>    
+    </div>
+   
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
